@@ -55,7 +55,7 @@ We evaluate our models on four datasets: **University-1652**, **SUES-200**, **Mu
     │   │   └── query_street
 ```
 **SUES-200**
-*Note: You need to split the origin dataset into the appropriate format using the `split_datasets.py` script. The processed format should be:*
+*Note: You need to split the origin dataset into the appropriate format using the `sample4geo/dataset/SUES-200/split_datasets.py` script. The processed format should be:*
 ```
     ├─ SUES-200
       ├── Training
@@ -92,7 +92,7 @@ Please download the necessary pre-trained weights and place them in the pretrain
 
 ## 🚀 Training & Testing
 
-> **⚠️ Note on Dataset Paths:** Before running any script below, please open the script and modify the DATA_PATH variable to point to the corresponding dataset's location on your machine.
+> **⚠️ Note on Dataset Paths:** Before running any script below, please open the script and modify the `DATA_PATH` variable to point to the corresponding dataset's location on your machine.
 
 ### LKGL (ConvNeXt-Base Backbone)
 To train and test the standard LKGL model, run the following scripts:
