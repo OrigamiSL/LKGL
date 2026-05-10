@@ -17,7 +17,7 @@ You can easily set up the environment using Conda and the provided `LKGL.yml` fi
 ```bash
 conda env create -f LKGL.yml
 conda activate LKGL
-
+```
 ### Key Dependency Versions:
 * **Python:** 3.9.23
 * **PyTorch:** 2.6.0+cu118
@@ -36,6 +36,7 @@ We evaluate our models on four datasets: **University-1652**, **SUES-200**, **Mu
 
 ### 2. Directory Structures
 
+```
 **University-1652 & Multi-weather University-1652**
 
     ├── University-1652
@@ -96,7 +97,9 @@ Please download the necessary pre-trained weights and place them in the pretrain
 ### LKGL (ConvNeXt-Base Backbone)
 To train and test the standard LKGL model, run the following scripts:
 * **University-1652:**
+  ````
         bash vote_university.sh
+  ```
 * **SUES-200:**
         bash vote_sues200.sh
 
