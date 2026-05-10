@@ -116,7 +116,7 @@ To train and test the LKGL-D variant, use the scripts below:
   bash vote_sues_dinov2.sh
   ```
 * **DenseUAV:**
- ```
+  ```
   bash vote_denseuav.sh
   ```
 * **Multi-weather University-1652:**
