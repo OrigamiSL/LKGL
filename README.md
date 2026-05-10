@@ -55,7 +55,7 @@ We evaluate our models on four datasets: **University-1652**, **SUES-200**, **Mu
     │   │   └── query_street
 ```
 **SUES-200**
-*Note: You need to split the origin dataset into the appropriate format using the split_datasets.py script. The processed format should be:*
+*Note: You need to split the origin dataset into the appropriate format using the `split_datasets.py` script. The processed format should be:*
 ```
     ├─ SUES-200
       ├── Training
@@ -87,8 +87,8 @@ We evaluate our models on four datasets: **University-1652**, **SUES-200**, **Mu
 Please download the necessary pre-trained weights and place them in the pretrained/ directory before training.
 
 1. **ALIKED-N(16, rot):** Provided at pretrained/aliked-n16rot.pth.
-2. **ConvNeXt-Base:** Download [here](https://mega.nz/file/ONA1RYiJ#jhm9skMDrizYBle_DYHREt4ZYlM0vAl6IT-lVUp8RjU) and save to pretrained/convnext_base_22k_1k_224.pth.
-3. **DINOv2-Base:** Download [here](https://mega.nz/file/KdJHCa6S#BOXidjInqGx3fkSDkAfcuegkHt_bunqNr0y-HPFvRaQ) and save to pretrained/dinov2_vitb14_pretrain.pth.
+2. **ConvNeXt-Base:** Download [here](https://mega.nz/file/ONA1RYiJ#jhm9skMDrizYBle_DYHREt4ZYlM0vAl6IT-lVUp8RjU) and save to `pretrained/convnext_base_22k_1k_224.pth`.
+3. **DINOv2-Base:** Download [here](https://mega.nz/file/KdJHCa6S#BOXidjInqGx3fkSDkAfcuegkHt_bunqNr0y-HPFvRaQ) and save to `pretrained/dinov2_vitb14_pretrain.pth`.
 
 ## 🚀 Training & Testing
 
@@ -101,25 +101,25 @@ To train and test the standard LKGL model, run the following scripts:
    bash vote_university.sh
   ```
 * **SUES-200:**
-* ```
-        bash vote_sues200.sh
+  ```
+  bash vote_sues200.sh
   ```
 
 ### LKGL-D (DINOv2-Base Backbone)
 To train and test the LKGL-D variant, use the scripts below:
 * **University-1652:**
-* ```
-        bash vote_uni_dinov2.sh
+  ```
+  bash vote_uni_dinov2.sh
   ```
 * **SUES-200:**
-* ```
-        bash vote_sues_dinov2.sh
+  ```
+  bash vote_sues_dinov2.sh
   ```
 * **DenseUAV:**
-* ```
-        bash vote_denseuav.sh
+ ```
+ bash vote_denseuav.sh
   ```
 * **Multi-weather University-1652:**
-* ```
-        bash train_test_multi_weather_uni.sh
+  ```
+  bash train_test_multi_weather_uni.sh
   ```
