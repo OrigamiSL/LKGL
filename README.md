@@ -1,4 +1,4 @@
-# LKGL: Enhancing Cross-View Geo-localization via Global--Local Feature Matching and Keypoint Guidance
+# Enhancing Cross-View Geo-localization via Global--Local Feature Matching and Keypoint Guidance
 
 [![GitHub Stars](https://img.shields.io/github/stars/OrigamiSL/LKGL?style=social)](https://github.com/OrigamiSL/LKGL)
 
