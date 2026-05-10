@@ -36,9 +36,9 @@ We evaluate our models on four datasets: **University-1652**, **SUES-200**, **Mu
 
 ### 2. Directory Structures
 
-```
-**University-1652 & Multi-weather University-1652**
 
+**University-1652 & Multi-weather University-1652**
+```
     ├── University-1652
     │   ├── train
     │   │   ├── drone
@@ -53,10 +53,10 @@ We evaluate our models on four datasets: **University-1652**, **SUES-200**, **Mu
     │   │   ├── query_drone
     │   │   ├── query_satellite
     │   │   └── query_street
-
+```
 **SUES-200**
 *Note: You need to split the origin dataset into the appropriate format using the split_datasets.py script. The processed format should be:*
-
+```
     ├─ SUES-200
       ├── Training
         ├── 150/
@@ -68,9 +68,9 @@ We evaluate our models on four datasets: **University-1652**, **SUES-200**, **Mu
         ├── 200/ 
         ├── 250/	
         └── 300/
-
+```
 **DenseUAV**
-
+```
     ├── DenseUAV
     │   ├── Dense_GPS_ALL.txt
     │   ├── Dense_GPS_test.txt
@@ -97,19 +97,29 @@ Please download the necessary pre-trained weights and place them in the pretrain
 ### LKGL (ConvNeXt-Base Backbone)
 To train and test the standard LKGL model, run the following scripts:
 * **University-1652:**
-  ````
-        bash vote_university.sh
+  ```
+   bash vote_university.sh
   ```
 * **SUES-200:**
+* ```
         bash vote_sues200.sh
+  ```
 
 ### LKGL-D (DINOv2-Base Backbone)
 To train and test the LKGL-D variant, use the scripts below:
 * **University-1652:**
+* ```
         bash vote_uni_dinov2.sh
+  ```
 * **SUES-200:**
+* ```
         bash vote_sues_dinov2.sh
+  ```
 * **DenseUAV:**
+* ```
         bash vote_denseuav.sh
+  ```
 * **Multi-weather University-1652:**
+* ```
         bash train_test_multi_weather_uni.sh
+  ```
